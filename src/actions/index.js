@@ -15,7 +15,7 @@ export function fetchWeather(city) {
   const url = `${rootURL}&q=${city},nz`;
   const request = axios.get(url);
 
-  console.log('Request',request);
+  console.log('Request', request);
 
   return {
     type: FETCH_WEATHER,
