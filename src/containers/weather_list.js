@@ -15,11 +15,11 @@ class WeatherList extends Component {
     return (
       <tr key={name}>
         <td>{name}</td>
-        <td>   <Chart color="red" data={temps} /> </td>
-        <td>    <Chart color="blue" data={pressure} /> </td>
+        <td>   <Chart color="red" data={temps} type="Kelvin: "/> </td>
+        <td>    <Chart color="blue" data={pressure} type="HPA: " /> </td>
         <td>
 
-        <Chart color="yellow" data={humid} />
+        <Chart color="yellow" data={humid} type="Percent: "/>
       </td>
       </tr>
     );
